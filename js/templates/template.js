@@ -6,7 +6,7 @@ const header = `
                               <a href="about.html">About</a>
                             </li>
                             <li>
-                              <a href="#skills.html">Skills</a>
+                              <a href="#skills">Skills</a>
                             </li>
                             <li>
                               <a href="#cheatsheets">Cheatsheets</a>
