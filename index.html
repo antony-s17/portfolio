@@ -7,36 +7,11 @@
     <link rel="icon" href="https://res.cloudinary.com/ddzxpi7rk/image/upload/v1775178300/icono_portafolio_buj5fg.png" type="image/png">
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" src="./js/main.js"></script>
     <title>CV - Portfolio Antony Salas</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html" class="logo"><strong>AS</strong></a>
-        <ul class="nav-links">
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
-            <a href="#cheatsheets">Cheatsheets</a>
-          </li>
-          <li>
-            <a href="#recursos">Resources</a>
-          </li>
-          <li>
-            <a href="contacto.html">Contact</a>
-          </li>
-        </ul>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-    </header>
+    <header id="header"></header>
     <main>
       <section class="hero">
         <article class="hero-content">
@@ -85,23 +60,40 @@
       <section id="skills" class="section">
         <article>
           <h2>Skills</h2>
+          <div id="skills-container">
+          </div>
         </article>
+      </section>
+      <section class="section">
+        <h2>Proyectos en Progreso</h2>
+        <div class="projects-container">
+            <article class="project-card">
+                <h3>Dashboard</h3>
+                <p>
+                    "Portafolio personal con integración de APIS, modo oscuro y diseño responsive."
+                </p>
+                <div class="project-tech">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">WeatherAPI</span>
+                </div>
+                <div class="proyect-links">
+                    <a class="btn btn-primary" href="https://github.com/antony-s17/project-break-dashboard" target="_blank">Ver en Github</a>
+                    <a class="btn btn-primary" href="https://antony-s17.github.io/project-break-dashboard/" target="_blank">Demo en linea</a>
+                </div>
+            </article>
+        </div>
       </section>
       <section id="cheatsheets" class="section">
         <article>
           <h2>Cheatsheets</h2>
-        </article>
-      </section>
-      <section id="recursos" class="section">
-        <article>
-          <h2>Recursos</h2>
+          <p>Guias de referencia para las tecnologias en desarrollo web</p>
+          <div id="cheatsheets-container">
+          </div>
         </article>
       </section>
     </main>
-    <footer>
-      <nav>
-        <p>&copy Antony Alonso Salas Rodriguez - Backend Developer</p>
-      </nav>
-    </footer>
+    <footer id="footer"></footer>
   </body>
 </html>

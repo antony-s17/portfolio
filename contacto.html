@@ -7,49 +7,41 @@
   <link rel="icon" href="https://res.cloudinary.com/ddzxpi7rk/image/upload/v1775178300/icono_portafolio_buj5fg.png" type="image/png">
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/styles.css" />
+  <script type="module" src="./js/main.js"></script>
   <title>CV - Portfolio Antony Salas</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="/index.html">AS:</a>
-      <br>
-      <a href="#">About</a>
-      <a href="#">Skills</a>
-      <a href="#">Cheatsheets</a>
-      <a href="#">Recursos</a>
-      <a href="/contacto.html">Contacto</a>
-    </nav>
-  </header>
+  <header id="header"></header>
   <main>
-    <section>
-      <article>
+    <section class="contact-section">
         <h1>Contacto</h1>
-        <p>¿Tienes alguna pregunta o propuesta? Rellena el formulario y me pondré en contacto contigo lo antes posible.</p>
-        <form action="" method="POST">
-          <fieldset>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" placeholder="Luis Eduardo" autofocus required>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="example@gmail.com" required>
-            <br>
-            <label for="asunto">Asunto:</label>
-            <input type="text" id="asunto" placeholder="Ingrese el asunto" required>
-            <br>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" required></textarea>
-            <br>
-            <button type="submit">Enviar</button>
-        </fieldset>
-      </form>
-      </article>
+        <p class="contact-intro">¿Tienes alguna pregunta o propuesta? Rellena el formulario y me pondré en contacto contigo lo antes posible.</p>
+        <div class="contact-container">
+          <form class="contact-form" action="https://formsubmit.co/salasrodriguezantony@hotmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde Portfolio">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" placeholder="Luis Eduardo" autofocus required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" placeholder="example@gmail.com" required>
+            </div>
+            <div class="form-group">
+              <label for="asunto">Asunto:</label>
+              <input type="text" id="asunto" placeholder="Ingrese el asunto" required>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" required></textarea>
+            </div>
+            <button class="btn-submit" type="submit">Enviar</button>
+          </form>
+        </div>
     </section>
   </main>
-  <footer>
-    <nav>
-      <p>&copy Antony Alonso Salas Rodriguez - Backend Developer</p>
-    </nav>
-  </footer>
+  <footer id="footer"></footer>
 </body>
 </html>
